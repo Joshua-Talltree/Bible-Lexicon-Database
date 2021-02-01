@@ -43,6 +43,5 @@ $(document).ready(function(){
             geocode($('#geocoder').val(), mapboxToken).then(function(result){
             });
         });
-
     });
 });
