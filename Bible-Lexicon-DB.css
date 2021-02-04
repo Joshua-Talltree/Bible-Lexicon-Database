@@ -1,0 +1,20 @@
+body{
+    background-color: cornflowerblue;
+}
+.card-body {
+    width: 1296px;
+    height: 1555px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-color: bisque;
+}
+
+.lead {
+    text-wrap: inherit;
+}
+
+.jumbotron-fluid {
+    color: cadetblue;
+    height: 350px;
+    background-image: url(img/Apostle-Paul-58ebd8dd5f9b58ef7e7a2064.jpg);
+}
