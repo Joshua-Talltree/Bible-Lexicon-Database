@@ -1,16 +1,16 @@
-fetch('https://www.dropbox.com/oauth2/authorize?client_id=<DROPBOX_API_KEY>&response_type=code', {
-    method: 'GET',
-    code: DROPBOX_API_KEY,
-    grant_type: 'authorization_code',
-    redirect_uri: `${`http://localhost:63342/Bible-Lexicon-Database/Bible-Lexicon-DB.html?_ijt=i2sufs4o83f3cjlpqp1o7gj2rp`}${window.location.pathname}`,
-    headers: {
-        'Content-Type': "application/x-www-form-urlencoded"
-    },
-    CLIENT_ID: 'DROPBOX_API_KEY'
-})
-    .then(res => res.json())
-    .then(data => console.log('access data =>', data))
-    .catch(err => console.log('access err =>',err));
+// fetch('https://www.dropbox.com/oauth2/authorize?client_id=DROPBOX_API_KEY&redirect_uri=MY_REDIRECT_URI&response_type=code', {
+//     method: 'GET',
+//     code: DROPBOX_API_KEY,
+//     grant_type: 'authorization_code',
+//     redirect_uri: `${`http://localhost:63342/Bible-Lexicon-Database/Bible-Lexicon-DB.html?_ijt=i2sufs4o83f3cjlpqp1o7gj2rp`}${window.location.pathname}`,
+//     headers: {
+//         'Content-Type': "no-cors"
+//     },
+//     CLIENT_ID: 'DROPBOX_API_KEY'
+// })
+//     .then(res => res.json())
+//     .then(data => console.log('access data =>', data))
+//     .catch(err => console.log('access err =>',err));
 
 
 
