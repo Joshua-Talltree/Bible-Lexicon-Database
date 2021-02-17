@@ -93,7 +93,7 @@ function onClick($this) {
     if(val === ''){
         console.log('no input');
     }else{
-        console.log(val);
+        alert(val);
     }
 }
 
