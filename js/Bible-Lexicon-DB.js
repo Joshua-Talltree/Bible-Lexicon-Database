@@ -1,20 +1,18 @@
-const headers = {
-    'Authorization': "Bearer " + DROPBOX_API_KEY,
-    'Content-Type': "application/json",
-    'X-Requested-With': "acr.browser.lightning",
-    'credentials': "include"
-};
-const params = JSON.stringify({"title": "file request title", "destination": "/file request destination"});
-
-fetch('https://cors-anywhere.herokuapp.com/https://api.dropboxapi.com/2/file_requests/create', {
-    method: 'GET',
-    headers: headers,
-})
-    .then(res => res.json())
-    .then(data => console.log('access data =>', data))
-    .catch(err => console.error(err));
-
-
+// const headers = {
+//     'Authorization': "Bearer " + DROPBOX_API_KEY,
+//     'Content-Type': "application/json",
+//     'X-Requested-With': "acr.browser.lightning",
+//     'credentials': "include"
+// };
+// const params = JSON.stringify({"title": "file request title", "destination": "/file request destination"});
+//
+// fetch('https://cors-anywhere.herokuapp.com/https://api.dropboxapi.com/2/file_requests/create', {
+//     method: 'GET',
+//     headers: headers,
+// })
+//     .then(res => res.json())
+//     .then(data => console.log('access data =>', data))
+//     .catch(err => console.error(err));
 
 
 // fetch('https://www.dropbox.com/oauth2/authorize?client_id=DROPBOX_API_KEY&redirect_uri=MY_REDIRECT_URI&response_type=code', {
@@ -30,7 +28,6 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.dropboxapi.com/2/file_req
 //     .then(res => res.json())
 //     .then(data => console.log('access data =>', data))
 //     .catch(err => console.log('access err =>',err));
-
 
 
 // fetch(`https://www.dropbox.com/oauth2/authorize?client_id=${DROPBOX_API_KEY}&response_type=code`)
@@ -90,12 +87,28 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.dropboxapi.com/2/file_req
 //         }
 //
 //         // Search Button:
+
+function onClick($this) {
+    const val = $this.previousElementSibling.value;
+    if(val === ''){
+        console.log('no input');
+    }else{
+        console.log(val);
+    }
+}
+
 //
-//         $(".btn").click(function(e){
-//             e.preventDefault();
-//             geocode($('#geocoder').val(), mapboxToken).then(function(result){
-//             });
-//         });
+// $("#btn1").click(function (e) {
+//     e.preventDefault();
+//     input($('#strongs').val(), DROPBOX_API_KEY).then(function (result) {
+//         console.log(result);
 //     });
 // });
 //
+// $("#btn2").click(function (e) {
+//     e.preventDefault();
+//     input($('#names').val()).then(function (result) {
+//         console.log(result);
+//     });
+// });
+
