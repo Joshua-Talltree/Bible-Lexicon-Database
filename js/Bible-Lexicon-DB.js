@@ -1,18 +1,18 @@
-// const headers = {
-//     'Authorization': "Bearer " + DROPBOX_API_KEY,
-//     'Content-Type': "application/json",
-//     'X-Requested-With': "acr.browser.lightning",
-//     'credentials': "include"
-// };
-// const params = JSON.stringify({"title": "file request title", "destination": "/file request destination"});
-//
-// fetch('https://cors-anywhere.herokuapp.com/https://api.dropboxapi.com/2/file_requests/create', {
-//     method: 'GET',
-//     headers: headers,
-// })
-//     .then(res => res.json())
-//     .then(data => console.log('access data =>', data))
-//     .catch(err => console.error(err));
+const headers = {
+    'Authorization': "Bearer " + DROPBOX_API_KEY,
+    'Content-Type': "application/json",
+    'X-Requested-With': "acr.browser.lightning",
+    'credentials': "include"
+};
+const params = JSON.stringify({"title": "file request title", "destination": "/file request destination"});
+
+fetch('https://cors-anywhere.herokuapp.com/https://api.dropboxapi.com/2/file_requests/create', {
+    method: 'GET',
+    headers: headers,
+})
+    .then(res => res.json())
+    .then(data => console.log('access data =>', data))
+    .catch(err => console.error(err));
 
 
 // fetch('https://www.dropbox.com/oauth2/authorize?client_id=DROPBOX_API_KEY&redirect_uri=MY_REDIRECT_URI&response_type=code', {
