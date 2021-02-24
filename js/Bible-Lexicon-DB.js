@@ -1,15 +1,55 @@
-var mysql = require('mysql');
-
-var con = mysql.createConnection({
-    host: "localhost",
-    user: "joshuatalltree",
-    password: "Juliana2002!"
+define(function (require) {
+    const namedModule = require('mysql');
 });
 
-con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-});
+
+
+// import * as mysql from "mssql";
+// import * as app from "express";
+//
+//
+// const express = require('express');
+// const app = express();
+// const mssql = require("mssql");
+// // Get request
+// app.get('/', function (req, res) {
+//
+//     // Config your database credential
+//     const config = {
+//         user: 'joshuatalltree',
+//         password: 'Juliana2002!',
+//         server: 'localhost',
+//         database: 'BA_lexicon'
+//     };
+//
+//     // Connect to your database
+//     mssql.connect(config, function (err) {
+//
+//         // Create Request object to preform
+//         // query operation
+//         const request = new mssql.Request();
+//
+//         // Query to the database and get the records
+//         request.query('select * from lexicon_table1',
+//             function (err, records) {
+//
+//                 if (err) console.log(err)
+//
+//                 // Send records as a response
+//                 // to browser
+//                 res.send(records);
+//
+//             });
+//     });
+// });
+//
+// const server = app.listen(5000, function () {
+//     console.log('Server is listening at port 5000...');
+// });
+
+
+// let connection = mysql.createConnection({
+
 // const headers = {
 //     'Authorization': "Bearer " + DROPBOX_API_KEY,
 //     'Content-Type': "application/json",
