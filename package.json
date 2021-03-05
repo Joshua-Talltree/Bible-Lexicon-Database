@@ -4,6 +4,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "mysql": "^2.18.1",
+    "name": "^0.0.2",
     "node": "^15.8.0"
   },
   "devDependencies": {
